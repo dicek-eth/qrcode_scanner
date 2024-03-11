@@ -1,20 +1,24 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
+#wrapper{
+  position: relative;
 }
 
-#qr-reader {
-  width: 100%;
-  max-width: 600px; /* スマートフォンの画面幅に応じて調整 */
+#video{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
 }
 
-#result {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #333;
+#camera-canvas{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+}
+
+#rect-canvas{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
 }
