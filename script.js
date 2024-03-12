@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function tick() {
       if (video.readyState === video.HAVE_ENOUGH_DATA) {
-          //loading.style.display = 'none';
+          loading.style.display = 'none';
           canvasElement.height = video.videoHeight;
           canvasElement.width = video.videoWidth;
           canvas.drawImage(video, 0, 0, canvasElement.width, canvasElement.height);
