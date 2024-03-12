@@ -8,11 +8,10 @@
 <body>
     <div class="container">
         <h1>資格確認システム</h1>
-        <div class="video-container">
+        <div id="loading">ロード中...</div>
+        <div class="video-wrapper">
             <video id="qr-video" width="300" height="300"></video>
-            <div id="loading">ロード中...</div>
         </div>
-        <canvas id="qr-canvas" style="display:none;"></canvas>
         <div id="result">スキャン結果がここに表示されます</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>

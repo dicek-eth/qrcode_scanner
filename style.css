@@ -1,48 +1,40 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f7; /* 任意の背景色 */
+  height: 100vh;
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* 背景色の変更 */
 }
 
 .container {
-  width: 100%;
-  max-width: 600px; /* 必要に応じて最大幅を設定 */
-  margin: 0 auto;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* コンテナに影をつける */
-  background-color: #fff;
   text-align: center;
-  border-radius: 8px;
+  max-width: 600px; /* コンテナの最大幅 */
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+  background: #ffffff; /* コンテナの背景色 */
+  margin: 20px;
 }
 
-.video-container {
-  position: relative;
-  margin-bottom: 20px;
+.video-wrapper {
+  margin: 10px 0;
 }
 
 #qr-video {
-  width: 100%;
+  width: 100%; /* レスポンシブ対応 */
   height: auto; /* アスペクト比を維持 */
-  border-radius: 8px; /* 角丸のビデオ */
 }
 
-#loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-}
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.5em; /* テキストサイズを調整 */
+  }
 
-#qr-canvas {
-  display: none;
-}
-
-#result {
-  margin-top: 20px;
+  .container {
+      padding: 10px;
+      margin: 10px;
+  }
 }
