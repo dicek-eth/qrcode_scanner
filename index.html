@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>資格確認システム</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner with jsQR</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>資格確認システム</h1>
-        <div id="loading">ロード中...</div>
-        <div class="video-container">
-            <video id="qr-video" playsinline></video>
-        </div>
+        <video id="qr-video" width="300" height="300"></video>
         <canvas id="qr-canvas"></canvas>
         <div id="result">スキャン結果がここに表示されます</div>
     </div>
