@@ -1,5 +1,5 @@
 const video = document.createElement('video');
-const canvasElement = document.getElementById('canvas');
+const canvasElement = document.getElementById('qr-canvas');
 const canvas = canvasElement.getContext('2d');
 const loading = document.getElementById('loading');
 const output = document.getElementById('output');
