@@ -1,9 +1,10 @@
 body, html {
-  height: 100%;
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   text-align: center;
 }
 
@@ -11,8 +12,25 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px;
 }
 
-#qr-video {
-  margin: 20px 0;
+#qr-video, #qr-canvas {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+      padding: 0 5%;
+  }
+
+  #qr-video, #qr-canvas {
+      width: 100%;
+      height: auto;
+  }
+
+  h1, #result {
+      font-size: 1.2em;
+  }
 }
