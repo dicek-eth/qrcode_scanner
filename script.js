@@ -6,9 +6,6 @@ let isReadQR = false;
 // ES6 import
 import jsQR from "jsqr";
  
-// CommonJS require
-const jsQR = require("jsqr");
-
 navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
   .then((stream) => {
     video.srcObject = stream;
