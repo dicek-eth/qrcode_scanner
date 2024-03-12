@@ -10,6 +10,8 @@ body, html {
 }
 
 .container {
+  max-height: 100vh; /* ビューポートの高さに合わせて最大高さを制限 */
+  overflow: hidden; /* コンテンツがはみ出た場合にスクロールを発生させない */
   width: 100%;
   max-width: 600px;
   margin: auto;
