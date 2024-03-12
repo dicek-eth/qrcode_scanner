@@ -2,19 +2,19 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>QR Code Scanner with jsQR</title>
+    <title>資格確認システム</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>資格確認システム</h1>
         <div id="loading">ロード中...</div>
-        <div class="video-wrapper">
-            <video id="qr-video" width="300" height="300"></video>
+        <div class="video-container">
+            <video id="qr-video" playsinline></video>
         </div>
+        <canvas id="qr-canvas"></canvas>
         <div id="result">スキャン結果がここに表示されます</div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

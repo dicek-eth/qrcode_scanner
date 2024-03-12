@@ -1,40 +1,49 @@
 body, html {
   margin: 0;
   padding: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* 背景色の変更 */
+  background-color: #fafafa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-  text-align: center;
-  max-width: 600px; /* コンテナの最大幅 */
   width: 100%;
+  max-width: 600px;
+  margin: auto;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
-  background: #ffffff; /* コンテナの背景色 */
-  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
 }
 
-.video-wrapper {
-  margin: 10px 0;
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
 }
 
 #qr-video {
-  width: 100%; /* レスポンシブ対応 */
-  height: auto; /* アスペクト比を維持 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#qr-canvas {
+  display: none;
 }
 
 @media (max-width: 768px) {
-  h1 {
-      font-size: 1.5em; /* テキストサイズを調整 */
+  .container {
+      width: 90%;
   }
 
-  .container {
-      padding: 10px;
-      margin: 10px;
+  h1 {
+      font-size: 1.5em;
   }
 }
