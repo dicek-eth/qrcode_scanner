@@ -13,11 +13,11 @@ body, html {
   max-height: 100vh; /* ビューポートの高さに合わせて最大高さを制限 */
   overflow: hidden; /* コンテンツがはみ出た場合にスクロールを発生させない */
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #93cddf;
   text-align: center;
 }
 
