@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const loading = document.getElementById('loading');
   let isReadQR = false;
 
-  navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+  navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } })
   .then((stream) => {
       video.srcObject = stream;
       video.setAttribute('playsinline', true);
