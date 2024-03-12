@@ -1,4 +1,5 @@
 const video = document.createElement('video');
+document.body.appendChild(video); // この行を追加
 const canvasElement = document.getElementById('qr-canvas');
 const canvas = canvasElement.getContext('2d', { willReadFrequently: true });
 const loading = document.getElementById('loading');
