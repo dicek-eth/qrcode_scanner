@@ -2,9 +2,8 @@ const video = document.createElement('video');
 const canvasElement = document.getElementById('canvas');
 const canvas = canvasElement.getContext('2d');
 const loading = document.getElementById('loading');
+const output = document.getElementById('output');
 let isReadQR = false;
-// ES6 import
-import jsQR from "jsqr";
  
 navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
   .then((stream) => {
@@ -13,9 +12,9 @@ navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
     video.play();
     requestAnimationFrame(tick);
   });
-
+ 
 function tick() {
-  loading.textContent = '⌛ ロード中...';
+  loading.innerText = 'ロード中...';
   if (video.readyState === video.HAVE_ENOUGH_DATA) {
     loading.hidden = true;
     canvasElement.hidden = false;
