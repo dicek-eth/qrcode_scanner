@@ -1,24 +1,18 @@
-#wrapper{
-  position: relative;
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-#video{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  visibility: hidden;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#camera-canvas{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 50;
-}
-
-#rect-canvas{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 100;
+#qr-video {
+  margin: 20px 0;
 }

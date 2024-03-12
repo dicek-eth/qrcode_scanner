@@ -27,9 +27,9 @@ function tick() {
       inversionAttempts: 'dontInvert',
     });
     if (code && !isReadQR) {
-      location.href = code.data;
-      isReadQR = true;
+      alert(`スキャン結果: ${code.data}`); // 結果をアラートで表示
+      isReadQR = true; // 一度スキャンしたら再スキャンしない
     }
   }
-  requestAnimationFrame(tick);
+  if (!isReadQR) requestAnimationFrame(tick); // QRコードをまだ読み取っていなければ、繰り返す
 }
