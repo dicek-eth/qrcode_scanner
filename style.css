@@ -38,6 +38,7 @@ body, html {
 
 #qr-canvas {
   display: none;
+  height: 800px;
 }
 
 /* タブレットやデスクトップのためのメディアクエリ */
