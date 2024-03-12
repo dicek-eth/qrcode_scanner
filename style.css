@@ -17,10 +17,14 @@ body, html {
   box-sizing: border-box;
 }
 
-#qr-video, #qr-canvas {
+#qr-video {
   max-width: 100%;
   height: auto;
   margin: 20px 0;
+}
+
+#qr-canvas {
+  display: none;
 }
 
 @media (max-width: 600px) {
